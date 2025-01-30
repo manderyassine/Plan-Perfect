@@ -19,12 +19,12 @@ const Footer = () => {
     },
     { 
       icon: LinkedinIcon, 
-      href: 'https://linkedin.com/in/yourusername', 
+      href: 'www.linkedin.com/in/mander-yassine-5b3b98349', 
       label: 'LinkedIn' 
     },
     { 
       icon: TwitterIcon, 
-      href: 'https://twitter.com/yourusername', 
+      href: 'https://twitter.com/manderyassine25', 
       label: 'Twitter' 
     }
   ];
