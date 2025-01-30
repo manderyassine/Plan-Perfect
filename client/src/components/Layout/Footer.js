@@ -34,7 +34,7 @@ const Footer = () => {
       <footer className="bg-white dark:bg-gray-900 border-t dark:border-gray-700 py-4">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="text-sm text-gray-600 dark:text-gray-400 ml-16">
-            &copy; {currentYear} PlanPerfect
+            &copy; {currentYear} PlanPerfect By-Yassine
           </div>
           
           <div className="flex space-x-4 items-center">
