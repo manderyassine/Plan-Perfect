@@ -19,7 +19,7 @@ const Footer = () => {
     },
     { 
       icon: LinkedinIcon, 
-      href: 'www.linkedin.com/in/mander-yassine-5b3b98349', 
+      href: 'https://www.linkedin.com/in/mander-yassine-5b3b98349/', 
       label: 'LinkedIn' 
     },
     { 
