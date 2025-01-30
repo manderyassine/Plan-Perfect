@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: Plan Perfect
+    env: node
+    region: frankfurt
+    buildCommand: npm install && cd client && npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        value: "mongodb+srv://yassineM12:yassineM12@cluster0.gqugo.mongodb.net/task-manager?retryWrites=true&w=majority&appName=Cluster0"
+      - key: JWT_SECRET
+        value: "0500e21a54aec679060ea27b58e735dd9f559301e61e1c6b9de95ef8807491a6"
+      - key: PORT
+        value: "10000"
+    autoDeploy: true
+    healthCheckPath: /api/health

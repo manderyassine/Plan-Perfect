@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-background-light text-text-light dark:bg-background-dark dark:text-text-dark font-sans;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  @apply w-2 bg-gray-100 dark:bg-gray-800;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-full dark:bg-primary-700;
+}
+
+/* Smooth transitions */
+* {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+/* Animations */
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Form elements dark mode */
+input, 
+textarea, 
+select {
+  @apply dark:bg-gray-800 dark:text-gray-200 dark:border-gray-700;
+}
+
+/* Tooltip styles */
+.tooltip {
+  @apply absolute z-50 p-2 text-sm text-white bg-gray-800 rounded-lg shadow-lg opacity-0 pointer-events-none transition-opacity duration-300 dark:bg-gray-700;
+}
+
+.tooltip-trigger:hover .tooltip {
+  @apply opacity-100;
+}
+
+/* Dark Mode Styles */
+body {
+  @apply transition-colors duration-300 ease-in-out;
+}
+
+.dark {
+  background-color: #121212;
+  color: #E5E7EB;
+}
+
+.dark body {
+  background-color: #121212;
+}
+
+.dark .bg-white {
+  background-color: #1E1E1E !important;
+}
+
+.dark .text-gray-900 {
+  color: #E5E7EB !important;
+}
+
+.dark .bg-gray-100 {
+  background-color: #2C3444 !important;
+}
+
+.dark .border {
+  border-color: #374151 !important;
+}
+
+.dark .shadow {
+  box-shadow: 0 10px 15px -3px rgba(255, 255, 255, 0.05), 0 4px 6px -2px rgba(255, 255, 255, 0.02) !important;
+}
+
+/* Improved Scrollbar for Dark Mode */
+.dark {
+  scrollbar-color: #374151 #121212;
+}
+
+.dark ::-webkit-scrollbar {
+  width: 12px;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #121212;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #374151;
+  border-radius: 6px;
+  border: 3px solid #121212;
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background-color: #4B5563;
+}
+
+/* Form Elements */
+.dark input, 
+.dark textarea, 
+.dark select {
+  background-color: #1E1E1E !important;
+  color: #E5E7EB !important;
+  border-color: #374151 !important;
+}
+
+.dark input::placeholder, 
+.dark textarea::placeholder {
+  color: #6B7280 !important;
+}
+
+/* Button Styles */
+.dark .btn-primary {
+  background-color: #3B82F6 !important;
+  color: white !important;
+}
+
+.dark .btn-secondary {
+  background-color: #10B981 !important;
+  color: white !important;
+}
+
+/* Card Styles */
+.dark .card {
+  background-color: #1E1E1E !important;
+  border-color: #374151 !important;
+  box-shadow: 0 10px 15px -3px rgba(255, 255, 255, 0.05), 0 4px 6px -2px rgba(255, 255, 255, 0.02) !important;
+}
