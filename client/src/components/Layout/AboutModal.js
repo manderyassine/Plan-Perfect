@@ -81,7 +81,7 @@ const AboutModal = ({ isOpen, onClose }) => {
 
         <div className="p-6 border-t dark:border-gray-700 text-center">
           <p className="text-sm text-gray-600 dark:text-gray-400">
-            © {new Date().getFullYear()} PlanPerfect. Designed and developed with ❤️
+            © {new Date().getFullYear()} PlanPerfect. Designed and developed with ❤️ By-MYassine
           </p>
         </div>
       </div>
